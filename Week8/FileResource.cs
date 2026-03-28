@@ -18,6 +18,6 @@ public class FileResource: Resource,  IDisposable
     public void Dispose()
     {
         Close();
-        Console.WriteLine($"The file {Name} is closed.");
+        Console.WriteLine($"The file {Name} is disposed.");
     }
 }

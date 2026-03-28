@@ -9,20 +9,20 @@ public class NetworkResource : Resource, IDisposable
     public override void Open()
     {
         IsOpen =  true;
-        Console.WriteLine($"The file {Name} is opened.");
+        Console.WriteLine($"The network {Name} is opened.");
         
     }
 
     public override void Close()
     {
         IsOpen = false;
-        Console.WriteLine($"The file {Name} is closed.");
+        Console.WriteLine($"The network {Name} is closed.");
     }
 
     public void Dispose()
     {
         Close();
-        Console.WriteLine($"The file {Name} has been disposed.");
+        Console.WriteLine($"The network {Name} has been disposed.");
     }
 }    
 
